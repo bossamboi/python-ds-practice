@@ -7,3 +7,8 @@ def reverse_string(phrase):
         >>> reverse_string('sauce')
         'ecuas'
     """
+    letters = list(phrase)
+    reversed_letters = letters[::-1]
+    return ''.join(reversed_letters)
+
+    
