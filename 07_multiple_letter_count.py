@@ -9,8 +9,5 @@ def multiple_letter_count(phrase):
     """
     freqs = {}
     for char in phrase:
-        if char in freqs:
-            freqs[char]+=1
-        else:
-            freqs[char] = 1
+        freqs[char] = freqs.get(char, 0) + 1
     return freqs

@@ -53,7 +53,5 @@ def list_manipulation(lst, command, location, value=None):
         if location == 'end':
             lst.append(value)
             return lst
-    else:
-        return None
 
 
